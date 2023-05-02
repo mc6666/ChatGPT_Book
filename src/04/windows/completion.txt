@@ -1,0 +1,1 @@
+{"model": "text-davinci-003", "prompt": "what is 3+4+5 equal to ?", "temperature": 0, "max_tokens": 7}

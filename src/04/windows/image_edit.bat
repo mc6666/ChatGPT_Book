@@ -1,0 +1,1 @@
+curl https://api.openai.com/v1/images/edits -H "Authorization: Bearer %1" -F image='@otter1.png' -F mask='@otter_mask.png' -F prompt="A cute baby sea otter wearing a beret" -F n=1 -F size="1024x1024"

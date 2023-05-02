@@ -1,0 +1,1 @@
+{"model": "text-ada-001", "prompt": "Explain the moon landing to a 6 year old in a few sentences.", "temperature": 0}

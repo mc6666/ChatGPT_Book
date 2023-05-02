@@ -1,0 +1,11 @@
+# list models
+openai api models.list
+
+# create a completion
+openai api completions.create -m ada -p "Hello world"
+
+# create a chat completion
+openai api chat_completions.create -m gpt-3.5-turbo -g user "Hello world"
+
+# generate images via DALL·E API
+openai api image.create -p "two dogs playing chess, cartoon" -n 1
