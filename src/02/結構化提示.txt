@@ -1,0 +1,11 @@
+system_prompt='我是問答專家，如果問題有事實根據，我會給你答案，若是無意義的問題，我會回答"不知道"'
+messages=[
+    {"role": "system", "content": system_prompt},
+    {"role": "user", "content": '台灣人平均壽命是幾歲?'}
+    {"role": "assistant", "content": '台灣人平均壽命為80歲.'}
+    {"role": "user", "content": '台灣西元2000年誰當選總統?'}
+    {"role": "assistant", "content": '陳水扁.'}
+    {"role": "user", "content": '香蕉平方根等於多少?'}
+    {"role": "assistant", "content": '不知道'}
+    {"role": "user", "content": '陽明山在哪裡?'}
+]

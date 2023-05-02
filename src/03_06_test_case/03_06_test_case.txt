@@ -1,0 +1,35 @@
+Q1. 產生5個測試個案。
+提示：please generate 5 test cases [import numpy as np
+a = np.array([[1 , 1], [10, 25]])
+b = np.array([16, 250])
+print(np.linalg.solve(a, b))
+]
+
+
+Q2. 寫一個讓使用者輸入方程式的程式。
+提示：please generate 5 test cases [
+from sympy.solvers import solve
+equations=[]
+while True:
+    x = input('請輸入方程式：')
+    if x == '':
+        break
+    equations.append(x)
+    
+if len(equations)>0:
+    for i in range(len(equations)):
+        arr = equations[i].split('=')
+        if len(arr) == 2:
+            equations[i] = arr[0] + '-(' + arr[1] + ')'
+    print(solve(equations))
+]
+
+
+Q3.上例只產生5個單一方程式，這次我們指定要含3個式子的聯立方程式。
+提示：please generate 5 test cases with 3 equations [程式碼同上].
+
+Q4. 使用Tkinter模組製作GUI桌面程式，測試ChatGPT是否看得懂?
+提示：please generate 5 test cases with 3 equations [同equation_gui.py內容].
+
+Q5. 使用streamlit套件製作網頁程式，測試ChatGPT是否看得懂?
+提示：please generate 5 test cases with 3 equations [同equation_web.py內容].

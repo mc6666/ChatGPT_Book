@@ -1,0 +1,78 @@
+Q1. 自動產生SQL指令：提供訂單資料表欄位，查詢訂單編號=10248的訂單資料。
+提示： 
+CREATE TABLE "Orders" 
+(
+  "Id" INTEGER PRIMARY KEY, 
+  "CustomerId" VARCHAR(8000) NULL, 
+  "EmployeesId" INTEGER NOT NULL, 
+  "orderdate" VARCHAR(8000) NULL, 
+  "RequiredDate" VARCHAR(8000) NULL, 
+  "ShippedDate" VARCHAR(8000) NULL, 
+  "ShipVia" INTEGER NULL, 
+  "Freight" DECIMAL NOT NULL, 
+  "ShipName" VARCHAR(8000) NULL, 
+  "ShipAddress" VARCHAR(8000) NULL, 
+  "ShipCity" VARCHAR(8000) NULL, 
+  "ShipRegion" VARCHAR(8000) NULL, 
+  "ShipPostalCode" VARCHAR(8000) NULL, 
+  "ShipCountry" VARCHAR(8000) NULL 
+);
+-- find all orders which order id is 10248
+
+
+Q2. 改用中文輸入提示，查詢訂單編號=10248的訂單資料。
+提示：
+-- 查詢訂單編號=10248的訂單資料
+
+Q3.測試統計函數。
+提示：
+-- 查詢找出訂單最多的客戶代碼。
+
+Q4. 查詢找出訂單最多的客戶，並同時查詢該客戶的訂單數量。
+提示：
+-- 查詢找出訂單最多的客戶代碼及訂單數量。
+
+Q5. 多個資料表連結(join)：額外提供訂單明細(OrderDetails)、客戶主表(Customers)。
+提示：
+CREATE TABLE "Orders" 
+(
+  "Id" INTEGER PRIMARY KEY, 
+  "CustomerId" VARCHAR(8000) NULL, 
+  "EmployeesId" INTEGER NOT NULL, 
+  "orderdate" VARCHAR(8000) NULL, 
+  "RequiredDate" VARCHAR(8000) NULL, 
+  "ShippedDate" VARCHAR(8000) NULL, 
+  "ShipVia" INTEGER NULL, 
+  "Freight" DECIMAL NOT NULL, 
+  "ShipName" VARCHAR(8000) NULL, 
+  "ShipAddress" VARCHAR(8000) NULL, 
+  "ShipCity" VARCHAR(8000) NULL, 
+  "ShipRegion" VARCHAR(8000) NULL, 
+  "ShipPostalCode" VARCHAR(8000) NULL, 
+  "ShipCountry" VARCHAR(8000) NULL 
+);
+CREATE TABLE "OrderDetails" 
+(
+  "Id" VARCHAR(8000) PRIMARY KEY, 
+  "OrderId" INTEGER NOT NULL, 
+  "ProductId" INTEGER NOT NULL, 
+  "UnitPrice" DECIMAL NOT NULL, 
+  "Quantity" INTEGER NOT NULL, 
+  "Discount" DOUBLE NOT NULL 
+);
+CREATE TABLE "Customers" 
+(
+  "Id" VARCHAR(8000) PRIMARY KEY, 
+  "CompanyName" VARCHAR(8000) NULL, 
+  "ContactName" VARCHAR(8000) NULL, 
+  "ContactTitle" VARCHAR(8000) NULL, 
+  "Address" VARCHAR(8000) NULL, 
+  "City" VARCHAR(8000) NULL, 
+  "Region" VARCHAR(8000) NULL, 
+  "PostalCode" VARCHAR(8000) NULL, 
+  "Country" VARCHAR(8000) NULL, 
+  "Phone" VARCHAR(8000) NULL, 
+  "Fax" VARCHAR(8000) NULL 
+);
+-- 統計每個客戶的訂單總金額。
+

@@ -1,0 +1,18 @@
+Q1. 產生Python人臉辨識程式碼。
+提示： generate face recognition code with python.
+
+Q2.請ChatGPT產生迴歸程式碼。
+提示：please generate linear regression solver with python.
+
+Q3.請ChatGPT改用NumPy套件。
+提示：please generate linear regression solver with python numpy.
+
+Q4. 請ChatGPT改用NumPy套件的線性代數模組。
+提示：please generate linear regression solver with python numpy algbre.
+
+Q5. 請ChatGPT產生分類的範本，使用『支援向量機』(SVM)演算法。
+提示：please generate classification svm solver with python.
+
+Q6. 產生TensorFlow程式碼辨識手寫阿拉伯數字。
+提示：generate code with tensorflow mnist.
+

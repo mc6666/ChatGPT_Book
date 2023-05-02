@@ -1,0 +1,12 @@
+Q1. 產生發出 HTTP 請求的Javascript。
+提示：How do I make an HTTP request in Javascript?
+
+Q2. 詢問上述程式碼要放在哪個目錄。
+提示：which folder to put data.html in?
+
+Q3. 產生可以回傳Json的Flask伺服器端程式碼。
+提示：generate web code to return json with python Flask.
+
+Q4. 產生HTML網頁顯示Json內容。
+提示：generate html to display json with python Flask.
+

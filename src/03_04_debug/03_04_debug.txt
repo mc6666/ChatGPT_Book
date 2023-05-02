@@ -1,0 +1,86 @@
+Q1. 請ChatGPT解說程式碼，將play_music_file.py內的程式碼貼到問題內，以[]包住，要在提示內跳行請按Shift+Enter，或在其他編輯器內打好，再整段貼到提示內。
+提示：You are a python expert, please explain the following code to me. [
+import pygame
+# initialize pygame mixer and set up MIDI output
+pygame.mixer.init()
+pygame.mixer.music.load("my_midi_file.mid")
+pygame.mixer.music.play()
+
+# wait until MIDI playback finishes
+while pygame.mixer.music.get_busy():
+    continue
+
+# cleanup
+pygame.mixer.quit()
+]
+
+
+Q2. 請ChatGPT偵錯(debug)：提供相同程式碼。
+提示：You are a python expert, please debug the following code to me. [
+import pygame
+
+# initialize pygame mixer and set up MIDI output
+pygame.mixer.init()
+pygame.mixer.music.load("HotelCalifornia.mid")
+pygame.mixer.music.play()
+
+# wait until MIDI playback finishes
+while pygame.mixer.music.get_busy():
+    continue
+
+# cleanup
+pygame.mixer.quit()
+]
+
+
+Q3. 請ChatGPT偵錯(debug)：再提供相同程式碼，但故意將load改為load1。
+提示：You are a python expert, please debug the following code to me. [
+import pygame
+
+# initialize pygame mixer and set up MIDI output
+pygame.mixer.init()
+pygame.mixer.music.load1("HotelCalifornia.mid")
+pygame.mixer.music.play()
+
+# wait until MIDI playback finishes
+while pygame.mixer.music.get_busy():
+    continue
+
+# cleanup
+pygame.mixer.quit()
+]
+
+
+Q4. 測試除以0的錯誤，看看ChatGPT可否找到錯誤。
+提示：You are a python expert, please debug the following code to me. [
+x=5
+y=10
+z=100
+print(z/(y-2*x))
+]
+
+
+Q5.使用NumPy進行點積運算，故意設定錯誤的維度，看看ChatGPT可否找到錯誤。
+提示：You are a python expert, please debug the following code to me. [
+import numpy as np
+x=np.array([1,2,3,4]).reshape(2,2)
+y= np.arange(9).reshape(3,3)
+print(x @ y)
+]
+
+
+Q6. 測試商業邏輯的錯誤：BMI公式應使用『公尺』，我們輸入『公分』為單位的數值，看看ChatGPT可否找到錯誤。
+提示：You are a python expert, please debug the following code to me. [
+h = 180
+w = 80
+BMI = w / (h) ** 2
+print(f'BMI={round(BMI, 2)}')
+
+if BMI < 18.5:
+    print('體重過輕')
+elif BMI < 24:
+    print正常')
+else:
+    print('過重')
+]
+

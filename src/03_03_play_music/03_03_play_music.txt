@@ -1,0 +1,9 @@
+Q1. 產生Python播放音樂程式碼。
+提示：generate a piano music code with python.
+
+Q2. 請求ChatGPT提供midi格式檔案
+提示：please provide me a midi file.
+
+Q3. 請求ChatGPT提供播放midi格式檔案的程式碼。
+提示：generate code to play midi file with midiutil.
+
